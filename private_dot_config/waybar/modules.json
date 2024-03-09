@@ -1,0 +1,56 @@
+{
+"include": [
+	"~/.config/waybar/modules/hardware_modules.json",
+        "~/.config/waybar/modules/hypr_modules.json",
+        "~/.config/waybar/modules/connection_modules.json",
+
+],
+
+"clock": {
+      "interval": 60,
+      "format": "{:%H:%M}",
+      "max-length": 25
+    },
+
+   "image/album-art": {
+     "exec":"~/.config/waybar/custom/spotify/album_art.sh",
+     "size": 32,
+     "interval": 30,  
+},
+
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 14,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+        "Firefox Web Browser": "Firefox",
+        "Foot Server": "Terminal"
+    }
+},
+"pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-muted": "",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
+}
+
+}

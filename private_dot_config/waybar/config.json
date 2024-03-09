@@ -1,0 +1,28 @@
+{
+   // General Setings
+
+    "layer": "top",
+    "margin-top": 20,
+    "margin-bottom": 0,
+    "margin-left": 20,
+    "margin-right": 20,
+    "reload_style_on_change": true,
+
+    // Load modules
+    "include": "~/.config/waybar/modules.json",
+
+    "modules-left": ["group/hw", "wlr/taskbar","hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["bluetooth", "pulseaudio", "network", "clock", "hyprland/language"],
+
+
+    // Groups
+
+    "group/hw":  {
+	"orientation": "horizontal",
+	"modules": [
+	    "cpu",
+	    "memory"
+	]
+    }
+}

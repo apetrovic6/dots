@@ -1,0 +1,150 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+
+
+* {
+    border: none;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Arial;
+    color: @color7;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces,
+#bluetooth,
+#cpu,
+#network,
+#pulseaudio,
+#clock,
+#window,
+#memory,
+#language,
+#taskbar
+{
+    font-size: 14px;
+    border-radius: 14px;
+    background: @color3;
+    margin: 0px 10px 0px 0px ;
+    padding: 0px 10px;
+
+}
+
+#workspaces {
+}
+
+
+#workspaces button.empty,
+#workspaces button.persistent {
+    margin: 10px 12px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    animation-name: fadeInOutAnimation;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-radius: 100%;
+    background: @color4;
+}
+
+#workspaces button.focused {
+}
+
+#workspaces button.active  {
+    border-radius: 14px;
+    animation-name: selectWorkspace;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+#bluetooth  {
+
+}
+
+#network {
+}
+
+#clock {
+}
+
+#cpu  {
+  font-size: 4px;
+}
+
+#window  {
+}
+
+#memory {
+}
+
+#pulseaudio{
+}
+
+#pulseaudio.muted {
+    color: red;
+}
+
+#pulseaudio.bluetooth {
+}
+
+#taskbar{
+    padding: 0px 15px;
+}
+
+#taskbar button {
+    border-radius: 14px;
+    margin: 10px 5px;
+}
+
+#taskbar button.active  {
+    animation-name: fadeInBackground;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#language {
+}
+
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+@keyframes selectWorkspace {
+  to {
+     padding: 0px 30px;
+     background-color: @color5;
+  }
+}
+
+@keyframes fadeInOutAnimation {
+  0% 
+  {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyFrames fadeInBackground  {
+  to  {
+    background-color: @color5;
+  }
+}

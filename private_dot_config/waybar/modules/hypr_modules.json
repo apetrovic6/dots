@@ -1,0 +1,35 @@
+{
+	"hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"active": "",
+		"default": ""
+	},
+	"persistent-workspaces": {
+             "*": 5, // 5 workspaces by default on every monitor
+       }
+    },
+
+"hyprland/window": {
+    "format": "👉 {}",
+    "rewrite": {
+        "(.*) — Mozilla Firefox": "🌎$1",
+        "(.*) - Alacritty": "$1",
+        "(.*) — Brave": "🌎 $1",
+    },
+    "separate-outputs": true
+},
+
+"hyprland/language": {
+    "format": "{}",
+    "format-en": "en",
+    "format-tr": "As bayrakları",
+    "keyboard-name": "at-translated-set-2-keyboard"
+},
+
+}
