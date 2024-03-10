@@ -57,14 +57,16 @@ button:hover {
 }
 
 #workspaces button:hover {
-    animation-name: fadeInOutAnimation;
+/*    animation-name: fadeInOutAnimation;
     animation-duration: 0.2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    box-shadow: inherit;
+ */
+box-shadow: inherit;
     text-shadow: inherit;
-    border-radius: inherit;
-    background: @color5;
+    border-radius: 14px;
+    background-color: @color5;
+
 }
 
 #workspaces button.focused {
@@ -78,9 +80,9 @@ button:hover {
 
 
 #workspaces button.active  {
-    border-radius: 100%;
+    border-radius: 14px;
     background-color: @color5;
-    padding: 0px 5px;
+    padding: 0px 10px;
 /*    animation-name: selectWorkspace;
     animation-duration: 0.2s;
     animation-timing-function: ease-in;
