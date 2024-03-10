@@ -57,6 +57,11 @@
     "exec": "~/.config/scripts/check_updates.sh",
     "interval": 1800,
     "format": "{}"
+},
+
+"tray": {
+    "icon-size": 21,
+    "spacing": 10
 }
 
 }

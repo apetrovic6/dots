@@ -19,7 +19,7 @@ export SWWW_TRANSITION="any"
 export SWWW_TRANSITION_DURATION=3
 
 # This controls (in seconds) when to switch to the next image
-INTERVAL=60
+INTERVAL=600
 
 while true; do
 	find "$1" -type f \
