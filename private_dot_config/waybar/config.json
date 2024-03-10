@@ -13,7 +13,7 @@
 
     "modules-left": ["group/hw", "hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["bluetooth", "pulseaudio", "network", "clock", "hyprland/language"],
+    "modules-right": ["custom/updates","bluetooth", "pulseaudio", "network", "clock", "hyprland/language"],
 
 
     // Groups

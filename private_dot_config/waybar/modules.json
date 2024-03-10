@@ -51,6 +51,13 @@
     "scroll-step": 1,
     "on-click": "pavucontrol",
     "ignored-sinks": ["Easy Effects Sink"]
+},
+
+"custom/updates": {
+    "exec": "~/.config/scripts/check_updates.sh",
+    "interval": 1800,
+    "format": "{}"
 }
 
 }
+
