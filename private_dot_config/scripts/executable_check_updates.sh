@@ -8,5 +8,5 @@ update_count=$(echo "$update_info" | grep '|' | wc -l)
 let update_count=update_count # Adjust this based on the actual output
 
 # Output for Waybar
-echo "$update_count   " 
+echo "$update_count " 
 

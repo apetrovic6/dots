@@ -45,32 +45,26 @@ button {
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
- 
-
-}
-
-
+button:hover {}
 
 #workspaces button {
     padding: 0px 15px;
 }
 
 #workspaces button:hover {
-/*    animation-name: fadeInOutAnimation;
+    /*    animation-name: fadeInOutAnimation;
     animation-duration: 0.2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
  */
-box-shadow: inherit;
+    box-shadow: inherit;
     text-shadow: inherit;
     border-radius: 14px;
     background-color: @color5;
-
 }
 
 #workspaces button.focused {
-	background-color: #64727D;
+    background-color: #64727d;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -78,24 +72,23 @@ box-shadow: inherit;
     background-color: #eb4d4b;
 }
 
-
-#workspaces button.active  {
+#workspaces button.active {
     border-radius: 14px;
     background-color: @color5;
     padding: 0px 10px;
-/*    animation-name: selectWorkspace;
+    /*    animation-name: selectWorkspace;
     animation-duration: 0.2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 */
 }
 
-#workspaces button.active:not(:first-child)  {
+#workspaces button.active:not(:first-child) {
     margin-left: 0px;
 }
 
 #mode {
-    background-color: #64727D;
+    background-color: #64727d;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -121,8 +114,7 @@ box-shadow: inherit;
 #window,
 #custom-updates,
 #language,
-#tray
-{
+#tray {
     background-color: @color3;
     padding: 0 20px;
     border-radius: 14px;
@@ -133,29 +125,26 @@ box-shadow: inherit;
     background-color: @color3;
     border-radius: 14px;
     margin-right: 20px;
-
 }
 
-
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
-#clock {
-}
+#clock {}
 
-#battery {
-}
+#battery {}
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: #26a65b;
 }
 
 @keyframes blink {
@@ -200,30 +189,26 @@ label:focus {
 }
 
 #cpu {
-  font-size: 5px;
-
+    font-size: 5px;
 }
 
-#memory {
-}
+#memory {}
 
 #disk {
-    background-color: #964B00;
+    background-color: #964b00;
 }
 
 #backlight {
     background-color: #90b1b1;
 }
 
-#network {
-}
+#network {}
 
 #network.disconnected {
     background-color: #f53c3c;
 }
 
-#pulseaudio {
-}
+#pulseaudio {}
 
 #pulseaudio.muted {
     background-color: #90b1b1;
@@ -261,15 +246,11 @@ label:focus {
     background-color: #eb4d4b;
 }
 
-#tray {
-    background-color: #2980b9;
-}
-
-#tray > .passive {
+#tray>.passive {
     -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
@@ -300,8 +281,7 @@ label:focus {
     background-color: #51a37a;
 }
 
-#language {
-}
+#language {}
 
 #keyboard-state {
     color: #000000;
@@ -310,11 +290,11 @@ label:focus {
     min-width: 16px;
 }
 
-#keyboard-state > label {
+#keyboard-state>label {
     padding: 0 5px;
 }
 
-#keyboard-state > label.locked {
+#keyboard-state>label.locked {
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -323,7 +303,7 @@ label:focus {
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 #privacy {
@@ -335,35 +315,31 @@ label:focus {
     color: white;
 }
 
-#privacy-item.screenshare {
-}
+#privacy-item.screenshare {}
 
-#privacy-item.audio-in {
-}
+#privacy-item.audio-in {}
 
-#privacy-item.audio-out {
-}
-
+#privacy-item.audio-out {}
 
 @keyframes selectWorkspace {
-  to {
-     padding: 0px 10px;
-     background-color: @color5;
-  }
+    to {
+        padding: 0px 10px;
+        background-color: @color5;
+    }
 }
 
 @keyframes fadeInOutAnimation {
-  0% 
-  {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-@keyFrames fadeInBackground  {
-  to  {
-    background-color: @color5;
-  }
+@keyframes fadeInBackground {
+    to {
+        background-color: @color5;
+    }
 }

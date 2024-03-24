@@ -16,3 +16,5 @@ cat ~/.cache/wal/sequences &
 
 eval "$(zoxide init bash)"
 fastfetch
+
+export PATH=$PATH:/home/apetrovic6/.spicetify

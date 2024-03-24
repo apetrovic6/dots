@@ -1,0 +1,166 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  // "logo": {
+  //     "type": "iterm",
+  //     "source": "/Users/carter/Desktop/apple1.png",
+  //     "width": 28,
+  //     "height": 12
+  // },
+  "display": {
+    "separator": "  ",
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "┌────────────────────────────────────────────┐", // `\u001b` is `\033`, or `\e`
+    },
+    {
+      "type": "title",
+      "key": "  ",
+      "format": "{1}@{2}",
+    },
+    {
+      "type": "custom", // InformationEnd
+      "format": "└────────────────────────────────────────────┘",
+    },
+    {
+      "type": "custom", // HardwareStart
+      "format": "┌─────────────────\u001b[1m Hardware\u001b[0m ─────────────────┐", // `\u001b` is `\033`, or `\e`
+    },
+    {
+      "type": "host",
+      "key": "  ",
+    },
+    {
+      "type": "cpu",
+      "key": "  ",
+    },
+    {
+      "type": "display",
+      "key": "  󰍹",
+    },
+    {
+      "type": "gpu",
+      "key": "  󰍹",
+    },
+    {
+      "type": "disk",
+      "key": "  ",
+    },
+    {
+      "type": "memory",
+      "key": "  󰑭",
+    },
+    {
+      "type": "swap",
+      "key": "  󰓡",
+    },
+    {
+      "type": "brightness",
+      "key": "  󰃞",
+    },
+    {
+      "type": "battery",
+      "key": "  ",
+    },
+    {
+      "type": "poweradapter",
+      "key": "  ",
+    },
+    {
+      "type": "bluetooth",
+      "key": "  ",
+    },
+    {
+      "type": "sound",
+      "key": "  ",
+    },
+    {
+      "type": "gamepad",
+      "key": "  ",
+    },
+    {
+      "type": "custom", // SoftwareStart
+      "format": "├─────────────────── \u001b[1mOS\u001b[0m ─────────────────────┤",
+    },
+    {
+      "type": "os",
+      "key": "  ", // Just get your distro's logo off nerdfonts.com
+    },
+    {
+      "type": "kernel",
+      "key": "  ",
+      "format": "{1} {2}",
+    },
+    {
+      "type": "packages",
+      "key": "  󰏖",
+    },
+    {
+      "type": "uptime",
+      "key": "  󰅐",
+    },
+    {
+      "type": "localip",
+      "key": "  󰩟",
+      "compact": true,
+    },
+    {
+      "type": "custom", // SoftwareStart
+      "format": "├───────────────── \u001b[1mDE/WM\u001b[0m ────────────────────┤",
+    },
+    {
+      "type": "wm",
+      "key": "  ",
+    },
+    {
+      "type": "de",
+      "key": "  ",
+    },
+    {
+      "type": "lm",
+      "key": "  󰧨",
+    },
+    {
+      "type": "shell",
+      "key": "  ",
+    },
+    {
+      "type": "terminal",
+      "key": "  ",
+    },
+    {
+      "type": "custom", // Misc
+      "format": "├────────────────── \u001b[1mMisc\u001b[0m ────────────────────┤",
+    },
+    {
+      "type": "theme",
+      "key": "  󰉼",
+    },
+    {
+      "type": "icons",
+      "key": "  󰀻",
+    },
+    {
+      "type": "player",
+      "key": "  󰥠",
+    },
+    {
+      "type": "media",
+      "key": "  󰝚",
+    },
+    {
+      "type": "custom", // InformationEnd
+      "format": "└────────────────────────────────────────────┘",
+    },
+    // {
+    //   "type": "custom",
+    //   "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m",
+    // },
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle",
+    },
+  ],
+}
