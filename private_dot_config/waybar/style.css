@@ -3,7 +3,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     border: none;
     color: @color7;
 }
@@ -114,11 +114,23 @@ button:hover {}
 #window,
 #custom-updates,
 #language,
-#tray {
+#tray,
+#power {
     background-color: @color3;
     padding: 0 20px;
     border-radius: 14px;
     margin-right: 20px;
+}
+
+#custom-powermenu {
+    color: #2ecc71;
+    padding: 0 5px;
+    /* font-size: 30px; */
+    margin: 0px 10px;
+}
+
+#custom-logout {
+    margin-right: 10px;
 }
 
 #workspaces {

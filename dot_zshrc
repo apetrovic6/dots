@@ -79,7 +79,6 @@ plugins=(
   copyfile
   copybuffer
   dirhistory
-  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
