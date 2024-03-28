@@ -5,7 +5,7 @@
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 22px;
     border: none;
-    color: @color7;
+    color: @foreground;
 }
 
 window#waybar {
@@ -60,7 +60,7 @@ button:hover {}
     box-shadow: inherit;
     text-shadow: inherit;
     border-radius: 14px;
-    background-color: @color5;
+    background-color: @foreground;
 }
 
 #workspaces button.focused {

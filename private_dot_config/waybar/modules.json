@@ -42,22 +42,17 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [
-        "",
-        ""
-      ]
+      "default": ["", ""]
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
-    "ignored-sinks": [
-      "Easy Effects Sink"
-    ]
+    "ignored-sinks": ["Easy Effects Sink"]
   },
   "custom/updates": {
     "exec": "~/.config/scripts/check_updates.sh",
     "interval": 1800,
     "format": "{}",
-    "on-click": "alacritty -e sudo zypper dup -y && sudo flatpak update -y"
+    "on-click": "alacritty -e sudo zypper dup && sudo flatpak update"
   },
   "tray": {
     "icon-size": 21,

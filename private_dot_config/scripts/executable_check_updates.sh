@@ -13,6 +13,7 @@ flatpak_update_count=$(echo "$flatpak_update_info" | grep -v '^Ref' | wc -l)
 # Calculate total updates
 total_updates=$((zypper_update_count + flatpak_update_count -1))
 
+
 # Output for Waybar
 echo "$total_updates " 
 

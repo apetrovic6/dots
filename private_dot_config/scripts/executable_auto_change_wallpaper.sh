@@ -29,6 +29,7 @@ while true; do
 		| sort -n | cut -d':' -f2- \
 		| while read -r img; do
 			swww img "$img"
+			sleep 3
 			wal -i "$img"
 			$HOME/.config/waybar/launch.sh &		
 			sleep $INTERVAL
